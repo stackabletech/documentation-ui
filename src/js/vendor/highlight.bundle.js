@@ -1,7 +1,8 @@
 ;(function () {
   'use strict'
 
-  var hljs = require('highlight.js/lib/highlight')
+  // eslint-disable-next-line prefer-const
+  let hljs = require('highlight.js/lib/core')
   hljs.registerLanguage('asciidoc', require('highlight.js/lib/languages/asciidoc'))
   hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'))
   hljs.registerLanguage('clojure', require('highlight.js/lib/languages/clojure'))
@@ -33,8 +34,8 @@
   hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
   hljs.registerLanguage('swift', require('highlight.js/lib/languages/swift'))
   hljs.registerLanguage('xml', require('highlight.js/lib/languages/xml'))
-  hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'))
-  ;[].slice.call(document.querySelectorAll('pre code.hljs')).forEach(function (node) {
-    hljs.highlightBlock(node)
+  hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
+  [].slice.call(document.querySelectorAll('pre code.hljs')).forEach(function (node) {
+    hljs.highlightElement(node)
   })
 })()
