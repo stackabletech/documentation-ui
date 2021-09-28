@@ -17,6 +17,7 @@ const postcssUrl = require('postcss-url')
 const postcssVar = require('postcss-custom-properties')
 const { Transform } = require('stream')
 const map = (transform) => new Transform({ objectMode: true, transform })
+const tailwind = require('tailwindcss')
 const through = () => map((file, enc, next) => next(null, file))
 const uglify = require('gulp-uglify')
 const vfs = require('vinyl-fs')
@@ -26,6 +27,7 @@ module.exports = (src, dest, preview) => () => {
   const sourcemaps = preview || process.env.SOURCEMAPS === 'true'
   const postcssPlugins = [
     postcssImport,
+    tailwind,
     (css, { messages, opts: { file } }) =>
       Promise.all(
         messages
@@ -53,7 +55,7 @@ module.exports = (src, dest, preview) => () => {
     autoprefixer,
     preview
       ? () => {}
-      : (css, result) => cssnano({ preset: 'default' })(css, result).then(() => postcssPseudoElementFixer(css, result)),
+      : cssnano({ preset: 'default' }),
   ]
 
   return merge(
@@ -125,10 +127,4 @@ module.exports = (src, dest, preview) => () => {
     vfs.src('layouts/*.hbs', opts),
     vfs.src('partials/*.hbs', opts)
   ).pipe(vfs.dest(dest, { sourcemaps: sourcemaps && '.' }))
-}
-
-function postcssPseudoElementFixer (css, result) {
-  css.walkRules(/(?:^|[^:]):(?:before|after)/, (rule) => {
-    rule.selector = rule.selectors.map((it) => it.replace(/(^|[^:]):(before|after)$/, '$1::$2')).join(',')
-  })
 }
