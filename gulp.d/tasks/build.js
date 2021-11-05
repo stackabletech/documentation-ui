@@ -27,7 +27,6 @@ module.exports = (src, dest, preview) => () => {
   const sourcemaps = preview || process.env.SOURCEMAPS === 'true'
   const postcssPlugins = [
     postcssImport,
-    tailwind,
     (css, { messages, opts: { file } }) =>
       Promise.all(
         messages
@@ -53,6 +52,7 @@ module.exports = (src, dest, preview) => () => {
     postcssVar({ preserve: preview }),
     preview ? postcssCalc : () => {},
     autoprefixer,
+    tailwind,
     preview
       ? () => {}
       : cssnano({ preset: 'default' }),

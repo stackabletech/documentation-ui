@@ -1,7 +1,19 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">{{site.title}}</a>
+      <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">
+        <svg style="width: 2em; fill: white;" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.97 517.33">
+          <path style="fill: #0080bd;" d="M0 44v71.99l254.37-44V0L0 44zM0 325.52v72l254.37-44v-71.99L0 325.52z"/>
+          <path style="fill: #b90069;" d="m254.37 72 253.6 41.59V41.61L254.37 0v72zM254.37 211.18l253.6 41.59v-71.99l-253.6-41.6v72zM254.37 517.33h253.59v-56.19l-253.59-41.59v97.78z"/>
+          <path style="fill: #0080bd;" d="M254.43 517.33H.85v-56.19l253.58-41.59v97.78zM.01 183.18v71.99l104.6-18.1v-71.98L.01 183.18zM170.61 153.67v72l83.76-14.49v-71.99l-83.76 14.48z"/>
+          <path style="fill: #b90069;" d="m336.46 294.99-82.09-13.46v71.99l82.09 13.47v-72z"/>
+          <path style="fill: #245987;" d="M507.97 113.59 403.19 96.4v67.19l104.78-50zM507.97 252.77l-104.78-17.19v67.04l104.78-49.85zM507.97 394.84l-104.78-17.19v66.54l104.78-49.35zM0 115.99l104.61 49.1-.11-67.17L0 115.99zM.01 255.17l104.6 52.32v-71.01L.01 255.17zM0 397.52l104.61 46.59-.11-64.59-104.5 18z"/>
+          <path style="fill: #b90069;" d="M507.97 394.84V319.8l-104.78-17.18v75.03l104.78 17.19z"/>
+        </svg>
+        <div>
+          {{site.title}}
+        </div>
+      </a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
