@@ -50,8 +50,8 @@
     "require-from-string": "^2",
     "stylelint": "^13",
     "stylelint-config-standard": "^22",
-    "typeface-roboto": "0.0.75",
     "typeface-roboto-mono": "0.0.75",
+    "typeface-titillium-web": "1.1.13",
     "vinyl-buffer": "^1",
     "vinyl-fs": "^3"
   }
