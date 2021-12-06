@@ -38,9 +38,9 @@
   --navbar-background: var(--color-jet-70);
   --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
-  --navbar-button-border-color: var(--panel-border-color);
-  --navbar-button-font-color: var(--body-font-color);
+  --navbar-button-background: var(--color-brand-secondary);
+  --navbar-button-border-color: var(--color-brand-secondary);
+  --navbar-button-font-color: var(--color-wite);
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--color-white);
   --navbar-menu-font-color: var(--color-white);
