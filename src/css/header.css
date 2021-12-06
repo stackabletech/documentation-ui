@@ -15,6 +15,7 @@ body {
   top: 0;
   width: 100%;
   z-index: var(--z-index-navbar);
+  /*border-bottom: 10px solid var(--color-brand-primary);*/
 }
 
 .navbar a {
@@ -165,6 +166,50 @@ body {
   color: var(--navbar-button-font-color);
   padding: 0 0.75em;
   white-space: nowrap;
+}
+
+.navbar-sub {
+  display: block;
+  position: relative;
+  background-color: var(--color-brand-primary);
+  padding: 5px 15px;
+  transition: all 0.5s;
+  height: 42px;
+  overflow: hidden;
+}
+
+.navbar-sub .navbar-sub-item {
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 16px;
+  /*background-color: pink;*/
+  text-transform: uppercase;
+  padding: 7px 10px;
+  opacity: 0.8;
+}
+
+.navbar-sub .navbar-sub-item:first-child {
+  padding-left: 0;
+}
+
+.navbar-sub .navbar-sub-item:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.navbar-sub .arrow {
+  position: absolute;
+  right: 15px;
+  top: 11px;
+}
+
+.navbar-sub .arrow:hover {
+  cursor: pointer;
+}
+
+.navbar-sub .arrow svg{
+  height: 20px;
+  color: var(--color-white);
 }
 
 @media screen and (max-width: 1023.5px) {
