@@ -2,7 +2,7 @@
   /* colors */
   --color-white: #fff;
   --color-smoke-10: #f8f9fc;
-  --color-smoke-30: #F6F8FB;
+  --color-smoke-30: #f6f8fb;
   --color-smoke-50: #eff2f7;
   --color-smoke-70: #e8edf4;
   --color-smoke-90: #e1e7f1;
@@ -16,8 +16,8 @@
   --color-jet-70: #272e3a;
   --color-jet-80: #242b36;
   --color-black: #000;
-  --color-brand-primary: #1880BD;
-  --color-brand-secondary: #B80069;
+  --color-brand-primary: #1880bd;
+  --color-brand-secondary: #b80069;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -63,9 +63,9 @@
   /* admonitions */
   --caution-color: #a0439c;
   --caution-on-color: var(--color-white);
-  --important-color: #9F005A;
+  --important-color: #9f005a;
   --important-on-color: var(--color-white);
-  --note-color: #1880BD;
+  --note-color: #1880bd;
   --note-on-color: var(--color-white);
   --tip-color: #41af46;
   --tip-on-color: var(--color-white);
@@ -82,7 +82,7 @@
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: #1880BD;
+  --link-font-color: #1880bd;
   --link_hover-font-color: #105984;
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
