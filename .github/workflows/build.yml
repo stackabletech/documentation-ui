@@ -25,10 +25,10 @@ jobs:
       - run: npm ci
       - run: node_modules/.bin/gulp lint
       - run: node_modules/.bin/gulp bundle
-      - name: Publish Bundle to Nexus
-        run: >-
-          /usr/bin/curl
-          --fail
-          -u 'github:${{ secrets.NEXUS_PASSWORD }}'
-          --upload-file ./build/ui-bundle.zip
-          "https://repo.stackable.tech/repository/misc/ui-bundle.zip"
+#      - name: Publish Bundle to Nexus
+#        run: >-
+#          /usr/bin/curl
+#          --fail
+#          -u 'github:${{ secrets.NEXUS_PASSWORD }}'
+#          --upload-file ./build/ui-bundle.zip
+#          "https://repo.stackable.tech/repository/misc/ui-bundle.zip"
