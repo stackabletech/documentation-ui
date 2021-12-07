@@ -179,10 +179,14 @@ body {
   display: block;
   position: relative;
   background-color: var(--color-brand-primary);
-  padding: 5px 15px;
+  padding: 5px 15px 5px 0;
   transition: all 0.5s;
   height: 42px;
   overflow: hidden;
+}
+
+.navbar-sub.open {
+  height: inherit;
 }
 
 .navbar-sub .navbar-sub-item {
@@ -191,12 +195,8 @@ body {
   font-size: 16px;
   /*background-color: pink;*/
   text-transform: uppercase;
-  padding: 7px 10px;
+  padding: 7px 0px 7px 15px;
   opacity: 0.8;
-}
-
-.navbar-sub .navbar-sub-item:first-child {
-  padding-left: 0;
 }
 
 .navbar-sub .navbar-sub-item:hover {
