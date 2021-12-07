@@ -15,7 +15,6 @@ body {
   top: 0;
   width: 100%;
   z-index: var(--z-index-navbar);
-  /*border-bottom: 10px solid var(--color-brand-primary);*/
 }
 
 .navbar a {
@@ -54,12 +53,12 @@ body {
   letter-spacing: 1px;
 }
 
-.navbar-brand .navbar-item.documentation-link:before {
+.navbar-brand .navbar-item.documentation-link::before {
   content: '';
   position: absolute;
   display: inline-block;
-  left: 0px;
-  top: 20px;
+  left: 0;
+  top: 25px;
   width: 1px;
   height: 23px;
   background-color: var(--color-brand-secondary);
@@ -163,13 +162,13 @@ body {
   border: 1px solid var(--navbar-button-border-color);
   border-radius: calc(1.75rem / 2);
   height: 1.75rem;
-  margin-top: 15px;
+  margin-top: 20px;
   color: var(--navbar-button-font-color);
   padding: 5px 20px;
   white-space: nowrap;
 }
 
-.navbar .button.pull-right{
+.navbar .button.pull-right {
   position: absolute;
   top: 0;
   right: 15px;
@@ -193,9 +192,8 @@ body {
   color: var(--color-white);
   display: inline-block;
   font-size: 16px;
-  /*background-color: pink;*/
   text-transform: uppercase;
-  padding: 7px 0px 7px 15px;
+  padding: 7px 0 7px 15px;
   opacity: 0.8;
 }
 
@@ -214,7 +212,7 @@ body {
   cursor: pointer;
 }
 
-.navbar-sub .arrow svg{
+.navbar-sub .arrow svg {
   height: 20px;
   color: var(--color-white);
 }
