@@ -257,6 +257,12 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .navbar-brand .navbar-item.documentation-link {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-burger {
     display: none;
