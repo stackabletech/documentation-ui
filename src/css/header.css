@@ -181,7 +181,7 @@ body {
   padding: 5px 15px 5px 0;
   transition: all 0.5s;
   height: 42px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .navbar-sub.open {
@@ -193,7 +193,7 @@ body {
   display: inline-block;
   font-size: 16px;
   text-transform: uppercase;
-  padding: 7px 0 7px 15px;
+  padding: 7px 0 7px 30px;
   opacity: 0.8;
 }
 
@@ -203,6 +203,7 @@ body {
 }
 
 .navbar-sub .arrow {
+  display: none;
   position: absolute;
   right: 15px;
   top: 11px;
@@ -215,6 +216,40 @@ body {
 .navbar-sub .arrow svg {
   height: 20px;
   color: var(--color-white);
+}
+
+.navbar-sub .drop-down {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbar-sub .drop-down-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  background-color: var(--color-brand-primary);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 15px 20px;
+  z-index: 4;
+}
+
+.navbar-sub .drop-down:hover .drop-down-content {
+  display: block;
+}
+
+.navbar-sub .drop-down .drop-down-content .drop-down-item {
+  display: block;
+  padding: 7px 0;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.navbar-sub .drop-down .drop-down-content .drop-down-item:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1023.5px) {
