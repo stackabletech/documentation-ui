@@ -1,0 +1,35 @@
+.doc.landing {
+  max-width: 1280px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 0 30%;
+  min-height: 200px;
+  margin-bottom: 2%; /* (200-32*3)/2 */
+}
+
+.boxes.two-column .box {
+  flex: 0 48%;
+}
+
+.box h3 {
+  display: inline-block;
+}
+
+.box div {
+  display: inline-block;
+}
+
+.box p {
+  display: inline-block;
+}
+
+.box .admonitionblock {
+  margin-top: 2.8rem;
+}
