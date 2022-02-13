@@ -252,9 +252,15 @@ body {
   opacity: 1;
 }
 
+.navbar .container {
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (max-width: 1023.5px) {
   .navbar-brand {
     height: inherit;
+    width: 100%;
   }
 
   .navbar .button.pull-right {

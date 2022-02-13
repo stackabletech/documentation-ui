@@ -18,6 +18,13 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .doc {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 .doc h1,
 .doc h2,
 .doc h3,

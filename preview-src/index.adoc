@@ -1,6 +1,6 @@
 = Stackable Documentation
 Author Name
-:page-layout: landing
+#:page-layout: landing
 :idprefix:
 :idseparator: -
 :!example-caption:

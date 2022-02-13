@@ -77,7 +77,7 @@
   --doc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
-  --doc-margin--desktop: 0 2rem;
+  --doc-margin--desktop: 0 1rem;
   --heading-font-color: var(--color-jet-80);
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
@@ -134,8 +134,8 @@
   --toc-height: calc(100vh - var(--toc-top) - 2.5rem);
   --toc-width: calc(162 / var(--rem-base) * 1rem);
   --toc-width--widescreen: calc(216 / var(--rem-base) * 1rem);
-  --doc-max-width: calc(720 / var(--rem-base) * 1rem);
-  --doc-max-width--desktop: calc(828 / var(--rem-base) * 1rem);
+  --doc-max-width: 100%;
+  --doc-max-width--desktop: 100%;
   /* stacking */
   --z-index-nav: 1;
   --z-index-toolbar: 2;

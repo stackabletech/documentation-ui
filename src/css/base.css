@@ -117,3 +117,11 @@ body ::-webkit-scrollbar {
 body ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb-color);
 }
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}

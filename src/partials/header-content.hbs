@@ -1,5 +1,6 @@
 <header class="header">
   <nav class="navbar">
+    <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://stackable.de">{{!--site.title--}}<img src="{{{uiRootPath}}}/img/stackable-logo.png"></a>
       <a class="navbar-item documentation-link" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">Documentation</a>
@@ -15,31 +16,34 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
     </div>
+    </div>
   </nav>
   <nav class="navbar-sub">
-    <a class="navbar-sub-item" href="/home/index.html">Overview</a>
-    <a class="navbar-sub-item" href="/home/index.html">Architecture</a>
-    <a class="navbar-sub-item" href="/home/getting_started.html">Getting Started</a>
-    <div class="navbar-sub-item drop-down">
-      Operators
-      <div class="drop-down-content">
-        <a class="drop-down-item" href="/kafka/index.html">Kafka Operator</a>
-        <a class="drop-down-item" href="/kafka/index.html">Spark Operator</a>
-        <a class="drop-down-item" href="/trino/index.html">Trino Operator</a>
-        <a class="drop-down-item" href="/zookeeper/index.html">ZooKeeper Operator</a>
-        <a class="drop-down-item" href="/nifi/index.html">NiFi Operator</a>
-        <a class="drop-down-item" href="/superset/index.html">Superset Operator</a>
-        <a class="drop-down-item" href="/druid/index.html">Druid Operator</a>
-        <a class="drop-down-item" href="/hbase/index.html">HBase Operator</a>
-        <a class="drop-down-item" href="/hdfs/index.html">HDFS Operator</a>
-        <a class="drop-down-item" href="/hive/index.html">Hive Operator</a>
-        <a class="drop-down-item" href="/monitoring/index.html">Monitoring and Metrics</a>
-        <a class="drop-down-item" href="/opa/index.html">OpenPolicyAgent</a>
+    <div class="container">
+      <a class="navbar-sub-item" href="/home/index.html">Overview</a>
+      <a class="navbar-sub-item" href="/home/index.html">Architecture</a>
+      <a class="navbar-sub-item" href="/home/getting_started.html">Getting Started</a>
+      <div class="navbar-sub-item drop-down">
+        Operators
+        <div class="drop-down-content">
+          <a class="drop-down-item" href="/kafka/index.html">Kafka Operator</a>
+          <a class="drop-down-item" href="/kafka/index.html">Spark Operator</a>
+          <a class="drop-down-item" href="/trino/index.html">Trino Operator</a>
+          <a class="drop-down-item" href="/zookeeper/index.html">ZooKeeper Operator</a>
+          <a class="drop-down-item" href="/nifi/index.html">NiFi Operator</a>
+          <a class="drop-down-item" href="/superset/index.html">Superset Operator</a>
+          <a class="drop-down-item" href="/druid/index.html">Druid Operator</a>
+          <a class="drop-down-item" href="/hbase/index.html">HBase Operator</a>
+          <a class="drop-down-item" href="/hdfs/index.html">HDFS Operator</a>
+          <a class="drop-down-item" href="/hive/index.html">Hive Operator</a>
+          <a class="drop-down-item" href="/monitoring/index.html">Monitoring and Metrics</a>
+          <a class="drop-down-item" href="/opa/index.html">OpenPolicyAgent</a>
+        </div>
       </div>
-    </div>
 
-    <a class="arrow" href="javascript:document.querySelector('.navbar-sub').classList.toggle('open')">
-      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
-    </a>
+      <a class="arrow" href="javascript:document.querySelector('.navbar-sub').classList.toggle('open')">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+      </a>
+    </div>
   </nav>
 </header>
