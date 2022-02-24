@@ -1,21 +1,23 @@
 :root {
   /* colors */
   --color-white: #fff;
-  --color-smoke-10: #fefefe;
-  --color-smoke-30: #fafafa;
-  --color-smoke-50: #f5f5f5;
-  --color-smoke-70: #f0f0f0;
-  --color-smoke-90: #e1e1e1;
+  --color-smoke-10: #f8f9fc;
+  --color-smoke-30: #f6f8fb;
+  --color-smoke-50: #eff2f7;
+  --color-smoke-70: #e8edf4;
+  --color-smoke-90: #e1e7f1;
   --color-gray-10: #c1c1c1;
-  --color-gray-30: #8e8e8e;
-  --color-gray-50: #808080;
-  --color-gray-70: #5d5d5d;
-  --color-jet-20: #4a4a4a;
-  --color-jet-30: #424242;
-  --color-jet-50: #333;
-  --color-jet-70: #222;
-  --color-jet-80: #191919;
+  --color-gray-30: #8e8e8f;
+  --color-gray-50: #80828a;
+  --color-gray-70: #5d5e5a;
+  --color-jet-20: #3a4557;
+  --color-jet-30: #343d4d;
+  --color-jet-50: #2d3543;
+  --color-jet-70: #272e3a;
+  --color-jet-80: #242b36;
   --color-black: #000;
+  --color-brand-primary: #1880bd;
+  --color-brand-secondary: #b80069;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -23,8 +25,8 @@
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
   --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
-  --body-font-weight-bold: 500;
+  --body-font-family: "Titillium Web", sans-serif;
+  --body-font-weight-bold: 600;
   --monospace-font-family: "Roboto Mono", monospace;
   --monospace-font-weight-bold: 500;
   /* base */
@@ -33,15 +35,15 @@
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  --navbar-background: var(--color-jet-70);
   --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
-  --navbar-button-border-color: var(--panel-border-color);
-  --navbar-button-font-color: var(--body-font-color);
+  --navbar-button-background: var(--color-brand-secondary);
+  --navbar-button-border-color: var(--color-brand-secondary);
+  --navbar-button-font-color: var(--color-wite);
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--color-white);
-  --navbar-menu-font-color: var(--body-font-color);
+  --navbar-menu-font-color: var(--color-white);
   --navbar-menu_hover-background: var(--color-smoke-50);
   /* nav */
   --nav-background: var(--panel-background);
@@ -52,18 +54,18 @@
   --nav-panel-divider-color: var(--color-smoke-90);
   --nav-secondary-background: var(--color-smoke-70);
   /* toolbar */
-  --toolbar-background: var(--panel-background);
+  --toolbar-background: var(--color-white);
   --toolbar-border-color: var(--panel-border-color);
-  --toolbar-font-color: var(--color-gray-70);
+  --toolbar-font-color: var(--color-jet-30);
   --toolbar-muted-color: var(--color-gray-30);
   --page-version-menu-background: var(--color-smoke-70);
   --page-version-missing-font-color: var(--color-gray-30);
   /* admonitions */
   --caution-color: #a0439c;
   --caution-on-color: var(--color-white);
-  --important-color: #d32f2f;
+  --important-color: #9f005a;
   --important-on-color: var(--color-white);
-  --note-color: #217ee7;
+  --note-color: #1880bd;
   --note-on-color: var(--color-white);
   --tip-color: #41af46;
   --tip-on-color: var(--color-white);
@@ -75,13 +77,13 @@
   --doc-font-size--desktop: calc(17 / var(--rem-base) * 1rem);
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
-  --doc-margin--desktop: 0 2rem;
+  --doc-margin--desktop: 0 1rem;
   --heading-font-color: var(--color-jet-80);
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
-  --link-font-color: #1565c0;
-  --link_hover-font-color: #104d92;
+  --link-font-color: #1880bd;
+  --link_hover-font-color: #105984;
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-smoke-70);
   --abstract-font-color: var(--color-jet-20);
@@ -118,7 +120,7 @@
   --footer-font-color: var(--color-gray-70);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions and positioning */
-  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --navbar-height: calc(73 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
@@ -132,8 +134,8 @@
   --toc-height: calc(100vh - var(--toc-top) - 2.5rem);
   --toc-width: calc(162 / var(--rem-base) * 1rem);
   --toc-width--widescreen: calc(216 / var(--rem-base) * 1rem);
-  --doc-max-width: calc(720 / var(--rem-base) * 1rem);
-  --doc-max-width--desktop: calc(828 / var(--rem-base) * 1rem);
+  --doc-max-width: 100%;
+  --doc-max-width--desktop: 100%;
   /* stacking */
   --z-index-nav: 1;
   --z-index-toolbar: 2;
