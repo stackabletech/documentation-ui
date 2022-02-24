@@ -27,7 +27,7 @@ Variable names and purposes may change.
 Here's an overview of the available UI model:
 
 .Variables available to the Handlebars templates (top-level variables in bold)
-[#template-variables-table,cols="1m,2"]
+[#template-variables-ref,cols="1m,2"]
 |===
 | Name | Description
 
@@ -36,6 +36,7 @@ s| [[site]]site
 
 | site.url
 | The base URL of the site, if specified in the playbook.
+If a site start page is defined, the visitor will be redirected from this location to the start page.
 
 | site.path
 | The pathname (i.e., subpath) of the site.url under which the site is hosted (e.g., /docs).
@@ -46,6 +47,9 @@ Can be prepended to `page.url` to create a root-relative URL for a page (e.g., `
 
 | site.title
 | The title of the site.
+
+| site.homeUrl
+| The URL that points directly to the start (aka home) page of the site.
 
 | site.components
 | A map of all the components in the site, keyed by component name.
@@ -79,6 +83,9 @@ The `page-` prefix is dropped from the name used in this model.
 For example, the value of the document attribute named `page-support-phone` can be accessed via the UI model using `page.attributes.support-phone`.
 Page attributes can be defined per page in the AsciiDoc document header (e.g., `:page-support-phone: +1 212-555-1234`) or globally in the playbook under the key `asciidoc.attributes`.
 The `page-` prefix is used to isolate page-related attributes from the numerous other document attributes in AsciiDoc.
+
+| page.author
+| The first author of the document, if one or more authors are specified in the AsciiDoc header.
 
 | page.description
 | The text of the description attribute in the AsciiDoc header, if specified.
@@ -130,8 +137,8 @@ It's often used as the base URL to generate relative URLs from this page.
 
 | page.canonicalUrl
 | The canonical URL for the current page.
-The canonicalUrl is only set if site.url is set.
-If there are multiple versions of the component, the canonical URL is the qualified URL of the most recent version of the page (excluding any prerelease versions).
+The canonicalUrl is only set if site.url is set to an absolute URL and the page's component has at least one non-prerelease version.
+If there are multiple versions of the component, the canonical URL is the qualified URL of the most recent, non-prerelease version of the page.
 If there's only a single version of the component, the canonical URL is the qualified URL of the current page.
 
 | page.editUrl
@@ -174,6 +181,8 @@ s| env
 
 s| siteRootPath
 | The relative path to the root of the published site.
+If a site start page is defined, the visitor will be redirected from this location to the start page.
+Can be used as a fallback when a site URL is not set.
 
 s| uiRootPath
 | The relative path to the root directory of the UI.
@@ -197,6 +206,6 @@ Next, open the file [.path]_templates/partials/head.hbs_ and add your tag.
 ----
 
 Each template file has access to the template model, which exposes information about the current page through variable names.
-The variables currently available are listed in <<template-variables-table>>.
+The variables currently available are listed in <<template-variables-ref>>.
 
 Save the file, commit it to git, push the branch, and allow the approval workflow to play out.
