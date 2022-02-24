@@ -31,4 +31,4 @@ jobs:
           --fail
           -u 'github:${{ secrets.NEXUS_PASSWORD }}'
           --upload-file ./build/ui-bundle.zip
-          "https://repo.stackable.tech/repository/misc/ui-bundle.zip"
+          "https://repo.stackable.tech/repository/misc/antora-ui-bundle.zip"
