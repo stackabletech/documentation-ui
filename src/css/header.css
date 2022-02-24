@@ -267,10 +267,6 @@ body {
     display: none;
   }
 
-  .navbar-sub {
-    display: none;
-  }
-
   .navbar-brand .navbar-item {
     align-items: center;
     display: flex;
@@ -391,5 +387,39 @@ body {
 
   .navbar-dropdown a.navbar-item:hover {
     background: var(--navbar-menu_hover-background);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-sub {
+    display: none;
+    transition: height 0.2s ease;
+    overflow: hidden;
+    position: fixed;
+    top: 70px;
+    height: inherit;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .navbar-sub.is-active {
+    display: block;
+  }
+
+  .navbar-sub .container {
+    display: block;
+  }
+
+  .navbar-sub .navbar-sub-item {
+    display: block;
+  }
+
+  .navbar-sub .navbar-sub-item .drop-down-content {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    padding-top: 10px;
+    top: 0;
+    left: 0;
   }
 }
