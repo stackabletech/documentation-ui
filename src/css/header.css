@@ -404,6 +404,7 @@ body {
 
   .navbar-sub.is-active {
     display: block;
+    overflow-y: scroll;
   }
 
   .navbar-sub .container {

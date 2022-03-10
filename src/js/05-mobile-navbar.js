@@ -14,7 +14,7 @@
     if (!menu.classList.contains('is-active')) {
       menu.classList.add('is-active')
       menu.style.height = 'auto'
-      var height = menu.clientHeight + 'px'
+      var height = Math.min(menu.clientHeight, window.innerHeight - 69) + 'px'
       menu.style.height = '0px'
 
       setTimeout(() => {
