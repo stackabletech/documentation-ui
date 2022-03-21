@@ -267,8 +267,34 @@ body {
     display: none;
   }
 
+  .navbar-sub:not(.is-active) {
+    max-height: 0;
+    padding: 0;
+  }
+
   .navbar-sub {
-    display: none;
+    position: fixed;
+    top: var(--navbar-height);
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - var(--navbar-height));
+    overflow-y: scroll;
+    z-index: 4;
+    transition: max-height 0.2s ease, padding 0.2s ease;
+  }
+
+  .navbar-sub .container {
+    flex-direction: column;
+  }
+
+  .navbar-sub .drop-down-content {
+    display: inherit;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    padding-top: 7px;
+    padding-bottom: 0;
+    box-shadow: inherit;
   }
 
   .navbar-brand .navbar-item {
