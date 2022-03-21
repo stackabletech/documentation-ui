@@ -4,6 +4,7 @@
   var SECT_CLASS_RX = /^sect(\d)$/
 
   var navContainer = document.querySelector('.nav-container')
+  if (!navContainer) return
   var navToggle = document.querySelector('.nav-toggle')
 
   navToggle.addEventListener('click', showNav)
