@@ -256,3 +256,19 @@ html.is-clipped--nav {
   opacity: 0.9;
   font-weight: var(--body-font-weight-bold);
 }
+
+.nav-menu .title-wrapper {
+  display: flex;
+}
+
+.nav-menu .title-wrapper h3 {
+  flex-grow: 2;
+}
+
+.nav-menu .title-wrapper .page-versions {
+  flex-grow: 1;
+  min-width: 85px;
+  margin-right: 0;
+  margin-left: 5px;
+  text-align: end;
+}
