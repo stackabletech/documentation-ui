@@ -14,7 +14,7 @@
   background-color: #474d57;
   font-family: inherit;
   font-size: 0.95rem;
-  width: 150px;
+  width: 120px;
   border: none;
   line-height: 1.5;
   padding: 4px 20px;
@@ -27,6 +27,12 @@
 
 #search-input:focus {
   outline: none;
+}
+
+@media screen and (min-width: 500px) {
+  #search-input {
+    width: 150px;
+  }
 }
 
 @media screen and (min-width: 769px) {
