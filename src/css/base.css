@@ -118,12 +118,10 @@ body ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-thumb-color);
 }
 
-@media screen and (min-width: 1024px) {
-  .container {
-    display: flex;
-    position: relative;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
