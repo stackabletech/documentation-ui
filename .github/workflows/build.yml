@@ -21,5 +21,4 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
       - run: npm ci
-      - run: node_modules/.bin/gulp lint
       - run: node_modules/.bin/gulp bundle
