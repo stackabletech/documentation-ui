@@ -1,9 +1,7 @@
 name: Build Bundle
 
 on:
-  push:
-    branches:
-      - stackable
+  pull_request:
 
 jobs:
 
@@ -25,10 +23,3 @@ jobs:
       - run: npm ci
       - run: node_modules/.bin/gulp lint
       - run: node_modules/.bin/gulp bundle
-      - name: Publish Bundle to Nexus
-        run: >-
-          /usr/bin/curl
-          --fail
-          -u 'github:${{ secrets.NEXUS_PASSWORD }}'
-          --upload-file ./build/ui-bundle.zip
-          "https://repo.stackable.tech/repository/misc/antora-ui-bundle.zip"
