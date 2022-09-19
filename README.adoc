@@ -23,6 +23,9 @@ This project is the UI template used on {url-stackable-docs}[the Stackable docs]
 === Tracking
 We have added our own tracking solution into `src/partials/head-scripts.hbs`. It has the URL hardcoded. it can be enabled by setting `site.keys.enable_tracking` to `true`/`false` in the Antora playbook.
 
+=== Highlight.js v10
+[Ticket](https://github.com/stackabletech/documentation/issues/232) - We are "stuck" at hightlight.js v10, because they removed HTML-passthru in v11, which we need for [Callouts](https://docs.asciidoctor.org/asciidoc/latest/verbatim/callouts/). The Antora Default UI is also stuck, and we will revisit our decision to pin this dependency once they upgrade as well.
+
 == Code of Conduct
 
 The Antora project and its project spaces are governed by our https://gitlab.com/antora/antora/-/blob/HEAD/CODE-OF-CONDUCT.adoc[Code of Conduct].
