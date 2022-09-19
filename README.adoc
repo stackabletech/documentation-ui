@@ -20,6 +20,8 @@ This project is the UI template used on {url-stackable-docs}[the Stackable docs]
 
 == Notes on our Customized Version
 
+LALALA this is a test
+
 === Tracking
 We have added our own tracking solution into `src/partials/head-scripts.hbs`. It has the URL hardcoded. it can be enabled by setting `site.keys.enable_tracking` to `true`/`false` in the Antora playbook.
 
