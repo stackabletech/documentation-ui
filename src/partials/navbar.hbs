@@ -1,0 +1,14 @@
+{{#each site.keys.navbar}}
+  {{#if (isString this)}}
+    <a class="navbar-sub-item" href="{{{ relativize this }}}">{{ @key }}</a>
+  {{else}}
+    <div class="navbar-sub-item drop-down">
+      {{ @key }}
+      <div class="drop-down-content">
+        {{#each this}}
+          <a class="drop-down-item" href="{{{ relativize this }}}">{{ @key }}</a>
+        {{/each}}
+      </div>
+    </div>
+  {{/if}}
+{{/each}}

@@ -3,6 +3,31 @@ site:
   url: http://localhost:5252
   title: Brand Docs
   homeUrl: &home_url /xyz/5.2/index.html
+  keys:
+    navbar:
+      "Home": "/home/stable/index.html"
+      "Getting Started": "/home/stable/getting_started.html"
+      "Concept": "/home/stable/concepts/index.html"
+      "Tutorials": "/home/stable/tutorials/index.html"
+      "stackablectl": "/stackablectl/stable/index.html"
+      "Operators":
+        "Overview": "/home/stable/operators/index.html"
+        "Apache Airflow": "/airflow/stable/index.html"
+        "Apache Druid": "/druid/stable/index.html"
+        "Apache HBase": "/hbase/stable/index.html"
+        "Apache Hadoop HDFS": "/hdfs/stable/index.html"
+        "Apache Hive": "/hive/stable/index.html"
+        "Apache Kafka": "/kafka/stable/index.html"
+        "Apache NiFi": "/nifi/stable/index.html"
+        "Apache Spark on K8S": "/spark-k8s/stable/index.html"
+        "Apache Superset": "/superset/stable/index.html"
+        "Trino": "/trino/stable/index.html"
+        "Apache ZooKeeper": "/zookeeper/stable/index.html"
+        "OpenPolicyAgent": "/opa/stable/index.html"
+        "Commons": "/commons-operator/stable/index.html"
+        "Secret": "/secret-operator/stable/index.html"
+        "Listener": "/listener-operator/stable/index.html"
+      "Contribute": "/home/stable/contributor/index.html"
   components:
   - name: abc
     title: Project ABC
