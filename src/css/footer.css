@@ -13,3 +13,18 @@ footer.footer {
 .footer a {
   color: var(--footer-link-font-color);
 }
+
+@media screen and (max-width: 720px) {
+  .c-and-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .c-and-socials {
+    display: flex;
+    justify-content: space-between;
+  }
+}
