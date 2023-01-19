@@ -4,6 +4,8 @@
 Welcome to Stackable!
 This documentation gives you an overview of the Stackable Data Platform, how to install and manage it as well as some tutorials.
 
+NOTE: This is a dummy note
+
 ++++
 <br>
 ++++

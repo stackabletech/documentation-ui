@@ -139,6 +139,7 @@
 .doc i.fa {
   hyphens: none;
   font-style: normal;
+  font-family: inherit;
 }
 
 .doc p code,
