@@ -25,7 +25,15 @@
     <nav id="navbar-sub" class="navbar-sub">
       <div class="container">
         {{#> navbar }}
-          navbar.hbs partial not found
+          navbar.hbs partial not found - you're seeing failover content
+          <a class="navbar-sub-item" href="#">Home</a>
+          <div class="navbar-sub-item drop-down">
+              Operators
+              <div class="drop-down-content">
+                  <a class="drop-down-item" href="#">Operator 1</a>
+                  <a class="drop-down-item" href="#">Operator 2</a>
+              </div>
+          </div>
         {{/navbar}}
 
         <a class="arrow" href="javascript:document.querySelector('.navbar-sub').classList.toggle('open')">
