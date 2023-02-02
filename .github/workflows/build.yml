@@ -1,4 +1,4 @@
-name: Build Bundle
+name: Build Bundle. Includes linting.
 
 on:
   pull_request:
@@ -21,4 +21,4 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
       - run: npm ci
-      - run: node_modules/.bin/gulp bundle
+      - run: npm run bundle

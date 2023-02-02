@@ -7,6 +7,11 @@
     "type": "git",
     "url": "https://gitlab.com/antora/antora-ui-default.git"
   },
+  "scripts": {
+    "lint": "gulp lint",
+    "bundle": "gulp bundle",
+    "preview": "gulp preview"
+  },
   "engines": {
     "node": ">= 8.0.0"
   },
