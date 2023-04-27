@@ -125,3 +125,12 @@ body ::-webkit-scrollbar-thumb {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+.container2 {
+  display: flex;
+  margin: 0 0;
+}
+
+.space-between {
+  justify-content: space-between;
+}

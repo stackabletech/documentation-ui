@@ -283,7 +283,7 @@ body {
     transition: max-height 0.2s ease, padding 0.2s ease;
   }
 
-  .navbar-sub .container {
+  .navbar-sub .container2 {
     flex-direction: column;
   }
 
