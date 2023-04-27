@@ -11,16 +11,23 @@
 }
 
 .page-versions .version-menu-toggle {
-  color: inherit;
+  color: var(--color-white);
   background: url(../img/chevron.svg) no-repeat;
   background-position: right 0.5rem top 50%;
   background-size: auto 0.75em;
   border: none;
   outline: none;
   line-height: inherit;
-  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  padding: 7px 1.5rem 7px 30px;
   position: relative;
-  z-index: var(--z-index-page-version-menu);
+  z-index: var(--z-index-page-version-menu-button);
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.page-versions .version-menu-toggle:hover {
+  opacity: 1;
+  text-decoration: none;
 }
 
 .page-versions .version-menu {
@@ -34,6 +41,9 @@
   top: 0;
   right: 0;
   white-space: nowrap;
+  z-index: var(--z-index-page-version-menu);
+  color: var(--color-white);
+  font-size: 16px;
 }
 
 .page-versions:not(.is-active) .version-menu {
@@ -41,11 +51,13 @@
 }
 
 .page-versions .version {
+  color: var(--color-white);
   display: block;
   padding-top: 0.5rem;
 }
 
 .page-versions .version.is-current {
+  color: var(--color-white);
   display: none;
 }
 
