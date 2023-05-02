@@ -125,3 +125,21 @@ body ::-webkit-scrollbar-thumb {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+/** pseudo-tailwind classes */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
