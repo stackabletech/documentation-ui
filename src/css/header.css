@@ -283,6 +283,10 @@ body {
     transition: max-height 0.2s ease, padding 0.2s ease;
   }
 
+  .navbar-sub .navlinks {
+    flex-direction: column;
+  }
+
   .navbar-sub .drop-down-content {
     display: inherit;
     position: inherit;
