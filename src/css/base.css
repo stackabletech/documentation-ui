@@ -126,11 +126,20 @@ body ::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
-.container2 {
+/** pseudo-tailwind classes */
+
+.flex {
   display: flex;
-  margin: 0 0;
 }
 
-.space-between {
+.flex-col {
+  flex-direction: column;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.justify-between {
   justify-content: space-between;
 }
