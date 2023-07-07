@@ -54,7 +54,7 @@
     "prettier-eslint": "^12",
     "require-directory": "^2.1",
     "require-from-string": "^2.0",
-    "stylelint": "^13.13",
+    "stylelint": "^15.10",
     "stylelint-config-standard": "^22",
     "typeface-roboto-mono": "1.1.13",
     "typeface-titillium-web": "1.1.13",
