@@ -1,0 +1,12 @@
+{{#if (eq page.version "nightly")}}
+<div class="banner-nightly">
+  These are the docs for a nightly preview version of the Stackable Data Platform. Latest stable release is XY.Z
+</div>
+{{else}}
+{{#unless (eq page.version page.component.latest.version)}}
+<div class="banner-outdated">
+  These are the docs for an older version of the Stackable Data Platform (XY.Z). Latest stable release is XY.Z
+</div>
+{{/unless}}
+{{/if}}
+</div>
