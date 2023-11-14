@@ -121,9 +121,10 @@
   --footer-link-font-color: var(--color-smoke-70);
   /* dimensions and positioning */
   --navbar-height: calc(73 / var(--rem-base) * 1rem);
+  --navbar-sub-height: calc(45 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
-  --body-top: var(--navbar-height);
+  --body-top: calc(var(--navbar-height) + var(--navbar-sub-height));
   --body-min-height: calc(100vh - var(--body-top));
   --nav-height: calc(var(--body-min-height) - var(--toolbar-height));
   --nav-height--desktop: var(--body-min-height);
