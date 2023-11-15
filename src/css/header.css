@@ -176,11 +176,14 @@ body {
 
 .navbar-sub {
   display: block;
-  position: relative;
   background-color: var(--color-brand-primary);
   padding: 5px 15px 5px 0;
   transition: all 0.5s;
-  height: 42px;
+  height: var(--navbar-sub-height);
+  position: fixed;
+  top: var(--navbar-height);
+  width: 100%;
+  z-index: var(--z-index-navbar);
   /* overflow: hidden; */
 }
 
