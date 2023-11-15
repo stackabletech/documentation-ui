@@ -2,6 +2,10 @@
  * The vertical navigation at the top is in the header.css
  * At less than 770px, the navbar disappears and is opened with
  * a button in the toolbar.
+ *
+ * Some of the responsiveness is about adjusting the height of the
+ * menu. On smaller screens the vertical menu disappears, so the height
+ * of the sidebar menu needs to be adjusted.
  */
 
 .nav-container {
