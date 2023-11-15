@@ -52,7 +52,7 @@
     top: calc(var(--navbar-height) + var(--navbar-sub-height));
     box-shadow: none;
     position: sticky;
-    height: calc(100vh - var(--navbar-sub-height) - var(--navbar-height));
+    height: var(--nav-height--desktop);
     margin-top: var(--navbar-sub-height);
   }
 }
