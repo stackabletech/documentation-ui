@@ -1,3 +1,9 @@
+/* This file contains the CSS for the sidebar navigation.
+ * The vertical navigation at the top is in the header.css 
+ * At less than 770px, the navbar disappears and is opened with
+ * a button in the toolbar.
+ */
+
 .nav-container {
   position: fixed;
   top: var(--navbar-height);
@@ -19,9 +25,7 @@
     font-size: calc(15.5 / var(--rem-base) * 1rem);
     flex: none;
     position: static;
-    /* top: calc(var(--navbar-height) + var(--navbar-sub-height)); */
     top: 0;
-    /* margin-top: var(--navbar-sub-height); */
     visibility: visible;
   }
 }
