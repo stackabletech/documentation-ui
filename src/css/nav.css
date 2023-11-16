@@ -1,3 +1,13 @@
+/* This file contains the CSS for the sidebar navigation.
+ * The vertical navigation at the top is in the header.css
+ * At less than 770px, the navbar disappears and is opened with
+ * a button in the toolbar.
+ *
+ * Some of the responsiveness is about adjusting the height of the
+ * menu. On smaller screens the vertical menu disappears, so the height
+ * of the sidebar menu needs to be adjusted.
+ */
+
 .nav-container {
   position: fixed;
   top: var(--navbar-height);
@@ -32,7 +42,7 @@
   background: var(--nav-background);
   position: relative;
   top: var(--toolbar-height);
-  height: var(--nav-height);
+  height: calc(100% - var(--navbar-sub-height));
 }
 
 @media screen and (min-width: 769px) {
@@ -43,10 +53,11 @@
 
 @media screen and (min-width: 1024px) {
   .nav {
-    top: var(--navbar-height);
+    top: calc(var(--navbar-height) + var(--navbar-sub-height));
     box-shadow: none;
     position: sticky;
     height: var(--nav-height--desktop);
+    margin-top: var(--navbar-sub-height);
   }
 }
 
@@ -63,7 +74,7 @@ html.is-clipped--nav {
 .nav-panel-menu {
   overflow-y: scroll;
   overscroll-behavior: none;
-  height: var(--nav-panel-menu-height);
+  height: 100%;
 }
 
 .nav-panel-menu:not(.is-active) .nav-menu {

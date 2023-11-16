@@ -1,3 +1,8 @@
+/* The toolbar contains a home link and breakcrumbs and is found
+ * right above the article content.
+ * On smaller screens it also contains a button to show the sidebar menu.
+ */
+
 .toolbar {
   color: var(--toolbar-font-color);
   align-items: center;
@@ -10,6 +15,12 @@
   position: sticky;
   top: var(--navbar-height);
   z-index: var(--z-index-toolbar);
+}
+
+@media screen and (min-width: 1024px) {
+  .toolbar {
+    top: calc(var(--navbar-height) + var(--navbar-sub-height));
+  }
 }
 
 .toolbar a {
