@@ -1,0 +1,14 @@
+/* Apply padding-top only for admonitions which only contain a code block */
+.doc .admonitionblock.code-rule td.content:has(div.listingblock) {
+  padding: 1rem 0 0 0 !important;
+}
+
+/* Disable box shadow for code blocks inside code rule admonitions */
+.doc .admonitionblock.code-rule td.content div.listingblock pre.highlight code {
+  box-shadow: none;
+}
+
+/* Change color of the "important" admonition back to the default red */
+.doc .admonitionblock.code-rule td.icon i.icon-important {
+  background-color: #e40046;
+}
