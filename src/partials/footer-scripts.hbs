@@ -3,3 +3,16 @@
 {{#if env.SITE_SEARCH_PROVIDER}}
 {{> search-scripts}}
 {{/if}}
+
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+
+<script type="text/javascript">
+
+docsearch({
+  appId: 'Z516FLL1DN',
+  apiKey: '2ec09ec8e87fcfac75e0c5cbdf2d856c',
+  indexName: 'stackable',
+  container: '#docsearch'
+});
+
+</script>
