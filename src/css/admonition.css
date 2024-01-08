@@ -9,13 +9,13 @@
     box-shadow: none;
   }
 
-  /* Change color of the "important" admonition back to the default red */
-  & td.icon i.icon-important {
-    background-color: #e40046;
-  }
-
   /* Don't use uppercase for captions */
   & .icon {
     text-transform: none;
   }
+}
+
+/* Change color of the "important" admonition back to the default red */
+.doc .admonitionblock.code-rule.warning .icon {
+  background-color: #e40046;
 }
