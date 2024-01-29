@@ -22,6 +22,7 @@
   hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'))
   hljs.registerLanguage('xml', require('highlight.js/lib/languages/xml'))
   hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
+  hljs.registerLanguage('toml', require('highlight.js/lib/languages/ini'));
 
   [].slice.call(document.querySelectorAll('pre code.hljs')).forEach(function (node) {
     hljs.highlightElement(node)
