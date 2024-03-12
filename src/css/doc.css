@@ -81,6 +81,15 @@
   font-weight: var(--alt-heading-font-weight);
 }
 
+.doc h1 code,
+.doc h2 code,
+.doc h3 code,
+.doc h4 code,
+.doc h5 code,
+.doc h6 code {
+  font-size: 85%;
+}
+
 .doc h1 .anchor,
 .doc h2 .anchor,
 .doc h3 .anchor,
