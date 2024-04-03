@@ -6,15 +6,18 @@ body {
   padding-top: var(--navbar-height);
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: var(--z-index-navbar);
+}
+
 .navbar {
   background: var(--navbar-background);
   color: var(--navbar-font-color);
   font-size: calc(16 / var(--rem-base) * 1rem);
   height: var(--navbar-height);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: var(--z-index-navbar);
 }
 
 .navbar a {
@@ -179,11 +182,6 @@ body {
   background-color: var(--color-brand-primary);
   padding: 5px 15px 5px 0;
   transition: all 0.5s;
-  height: 42px;
-  position: fixed;
-  top: var(--navbar-height);
-  width: 100%;
-  z-index: var(--z-index-navbar);
   /* overflow: hidden; */
 }
 
