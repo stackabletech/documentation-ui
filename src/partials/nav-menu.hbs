@@ -1,6 +1,9 @@
 {{#with page.navigation}}
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
+    <div class="search hide-for-print">
+      <div id="docsearch" class="field">
+    </div>
     <div class="title-wrapper">
       {{#with @root.page.componentVersion}}
       <h3 class="title"><a href="{{{relativize ./url}}}">{{./title}}</a></h3>
