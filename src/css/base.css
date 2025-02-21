@@ -122,7 +122,8 @@ body ::-webkit-scrollbar-thumb {
   display: flex;
   position: relative;
   width: 100%;
-  max-width: 1280px;
+  /* I've payed the full screen, I'm going to use the full screen :) */
+  /* max-width: 1280px; */
   margin: 0 auto;
 }
 
