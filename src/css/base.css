@@ -122,8 +122,9 @@ body ::-webkit-scrollbar-thumb {
   display: flex;
   position: relative;
   width: 100%;
-  /* I've payed the full screen, I'm going to use the full screen :) */
-  /* max-width: 1280px; */
+  /* We couldn't agree if we want this or not. So we settled on trying 1920px for now */
+  /* See https://github.com/stackabletech/documentation-ui/pull/78 for details */
+  max-width: 1920px;
   margin: 0 auto;
 }
 
