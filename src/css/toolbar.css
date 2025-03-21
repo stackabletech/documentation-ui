@@ -7,19 +7,18 @@
   color: var(--toolbar-font-color);
   align-items: center;
   background-color: var(--toolbar-background);
-  box-shadow: 0 1px 0 var(--toolbar-border-color);
+  border-bottom: solid 2px var(--toolbar-border-color);
   display: flex;
   font-size: calc(15 / var(--rem-base) * 1rem);
   height: var(--toolbar-height);
   justify-content: flex-start;
   position: sticky;
-  top: var(--navbar-height);
   z-index: var(--z-index-toolbar);
 }
 
 @media screen and (min-width: 1024px) {
   .toolbar {
-    top: calc(var(--navbar-height) + var(--navbar-sub-height));
+    top: calc(var(--navbar-height));
   }
 }
 
