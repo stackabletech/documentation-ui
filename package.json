@@ -41,7 +41,7 @@
     "gulp-concat": "^2.6",
     "gulp-connect": "^5.7",
     "gulp-eslint": "^6.0",
-    "gulp-imagemin": "^7",
+    "gulp-imagemin": "^9.0.0",
     "gulp-postcss": "^9",
     "gulp-stylelint": "^13.0",
     "gulp-uglify": "^3.0",
