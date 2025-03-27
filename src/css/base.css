@@ -122,7 +122,7 @@ body ::-webkit-scrollbar-thumb {
   display: flex;
   position: relative;
   width: 100%;
-  /* 
+  /*
     We couldn't agree if we want this or not.
     We tried 1920px, it was way to wide, so it got dropped back to 1480px,
     which is should be a good middle ground between 1280px and 1920px.
