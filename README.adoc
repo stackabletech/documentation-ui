@@ -50,19 +50,19 @@ Inside the `src` directory are:
 * `css`: Contains all the CSS. `site.css` contains imports of all the other files. In `vendor` there is the copied-in FontAwesome CSS file.
 * `helpers`: Contains Handlebars helper functions. The file names are the names of the helpers. You can use these inside the Handlebars templates.
 * `img`: Images used in the UI.
-* `js`: TODO
-* `layouts`: TODO
+* `js`: Contains JavaScript files for UI functionality, numbered for loading order. The `vendor` directory contains third-party libraries like highlight.js and tabs functionality.
+* `layouts`: Contains the main Handlebars layout templates. `default.hbs` is the standard page layout, `landing.hbs` is for landing pages with special styling, and `404.hbs` handles error pages. These templates define the overall page structure and include partials for header, body, and footer.
 * `partials`: Contains all the Handlebars files. This is the directory containing all the templated HTML for the site.
 
 === Gulp
 
-To work on the build process of this, you need to understand [gulp](https://gulpjs.com/docs/en/getting-started/javascript-and-gulpfiles).
+To work on the build process of this, you need to understand https://gulpjs.com/docs/en/getting-started/javascript-and-gulpfiles[gulp].
 Gulp is a builder/bundler that is used to package this antora UI.
 
 In this project, `gulpfile.js` is the main entrypoint for gulp.
 This file references tasks in the `gulp.d` directory.
 
-You don't need to install the `gulp` CLI yourself, you can call package scripts (i.e. `npm run bundle` which will then call `gulp` from the `node_modules`)
+You don't need to install the `gulp` CLI yourself, you can call package scripts (i.e. `npm run bundle` which will then call `gulp` from the `node_modules`).
 
 === Building the final documentation
 
