@@ -47,12 +47,12 @@
 
     console.log(feedbackFormData)
 
-    fetch("/", {
-       method: "POST",
-       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-       body: new URLSearchParams(feedbackFormData).toString()
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(feedbackFormData).toString()
     })
-    .then(() => console.log("Form successfully submitted"))
+    .then(() => console.log('Form successfully submitted'))
     .catch(error => alert(error))
 
     feedbackFormSubmitButton.innerText = 'Submitted'
