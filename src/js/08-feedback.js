@@ -50,10 +50,10 @@
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(feedbackFormData).toString()
+      body: new URLSearchParams(feedbackFormData).toString(),
     })
-    .then(() => console.log('Form successfully submitted'))
-    .catch(error => alert(error))
+      .then(() => console.log('Form successfully submitted'))
+      .catch((error) => alert(error))
 
     feedbackFormSubmitButton.innerText = 'Submitted'
     feedbackFormSubmitButton.disabled = true
