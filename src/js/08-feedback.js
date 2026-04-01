@@ -33,7 +33,6 @@
   feedbackFormSubmitButton.addEventListener('click', submitFeedback)
 
   function submitFeedback (e) {
-    e.stopPropagation() // trap event
     feedbackFormSubmitButton.classList.add('selected')
 
     // TODO: Submit feedback to backend, alternatively let netlify handle it
