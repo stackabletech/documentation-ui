@@ -33,9 +33,27 @@
   feedbackFormSubmitButton.addEventListener('click', submitFeedback)
 
   function submitFeedback (e) {
+    e.preventDefault()
     feedbackFormSubmitButton.classList.add('selected')
 
-    // TODO: Submit feedback to backend, alternatively let netlify handle it
+    var feedbackFormOptionButtonSelected = document.querySelector('.feedback-form-button.selected')
+    if (!feedbackFormOptionButtonSelected) return
+
+    const feedbackForm = document.querySelector('.feedback-section form')
+    if (!feedbackForm) return
+    const feedbackFormData = new FormData(feedbackForm)
+
+    feedbackFormData.append('feedback-option', feedbackFormOptionButtonSelected.value)
+
+    console.log(feedbackFormData)
+
+    fetch("/", {
+       method: "POST",
+       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+       body: new URLSearchParams(feedbackFormData).toString()
+    })
+    .then(() => console.log("Form successfully submitted"))
+    .catch(error => alert(error))
 
     feedbackFormSubmitButton.innerText = 'Submitted'
     feedbackFormSubmitButton.disabled = true
