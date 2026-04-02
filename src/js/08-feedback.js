@@ -45,12 +45,14 @@
 
     feedbackFormData.append('feedback-option', feedbackFormOptionButtonSelected.value)
 
-    fetch('/', {
+    var action = feedbackForm.getAttribute('action') || '/'
+
+    fetch(action, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(feedbackFormData).toString(),
     })
-      .then((response) => console.log('Form successfully submitted. DEBUG: ', response))
+      .then(() => console.log('Form successfully submitted.'))
       .catch((error) => console.error('ERROR: ', error))
 
     feedbackFormSubmitButton.innerText = 'Submitted'
