@@ -47,6 +47,8 @@
 
     var action = feedbackForm.getAttribute('action') || '/'
 
+    feedbackFormData.append('feedback-page', action)
+
     fetch(action, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
