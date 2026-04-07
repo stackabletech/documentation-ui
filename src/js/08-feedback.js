@@ -43,11 +43,11 @@
     if (!feedbackForm) return
     const feedbackFormData = new FormData(feedbackForm)
 
-    feedbackFormData.append('feedback-option', feedbackFormOptionButtonSelected.value)
+    feedbackFormData.set('feedback-option', feedbackFormOptionButtonSelected.value)
 
     var action = feedbackForm.getAttribute('action') || '/'
 
-    feedbackFormData.append('feedback-page', action)
+    feedbackFormData.set('feedback-page', action)
 
     fetch(action, {
       method: 'POST',
