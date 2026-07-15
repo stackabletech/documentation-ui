@@ -1,4 +1,15 @@
 = Stackable UI based on Antora Default UI
+
+[IMPORTANT]
+====
+*This repository is archived.* The UI was vendored into the
+https://github.com/stackabletech/documentation[documentation repository]
+(`ui/` directory) with
+https://github.com/stackabletech/documentation/pull/873[documentation#873];
+UI changes are normal pull requests there now, no submodule bump needed.
+This repository stays around read-only so its history remains browsable.
+====
+
 // Settings:
 :experimental:
 :hide-uri-scheme:
