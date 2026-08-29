@@ -42,7 +42,7 @@
     "gulp-connect": "^5.7",
     "gulp-eslint": "^6.0",
     "gulp-imagemin": "^7",
-    "gulp-postcss": "^9",
+    "gulp-postcss": "^10.0.0",
     "gulp-stylelint": "^13.0",
     "gulp-uglify": "^3.0",
     "gulp-vinyl-zip": "^2.5",
