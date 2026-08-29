@@ -1,0 +1,23 @@
+<div class="feedback-section">
+    <p class="feedback-section-title">Was this page helpful?</p>
+    <form name="feedback-form" action="{{page.url}}" netlify netlify-honeypot="bot-field">
+        <input name="feedback-page" hidden/>
+        <div hidden>
+            <label>
+            Don't fill this out if you're human: <input name="bot-field" type="text" />
+            </label>
+        </div>
+        <div class="feedback-form-options">
+            <input name="feedback-option" hidden/>
+            <button class="feedback-form-button" type="button" value="page-helpful" aria-label="The page was helpful">Yes</button>
+            <button class="feedback-form-button" type="button" value="page-not-helpful" aria-label="The page was not helpful">No</button>
+        </div>
+        <div class="feedback-form-text hide">
+            <textarea name="feedback-text" placeholder="Tell us what you liked or didn't like (optional)" rows="3"></textarea>
+            <div class="feedback-form-submit">
+                <button class="feedback-form-submit-button">Send feedback</button>
+                <p class="feedback-form-thank-you hide">Thank you for your feedback!</p>
+            </div>
+        </div>
+    </form>
+</div>

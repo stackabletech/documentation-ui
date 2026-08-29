@@ -119,6 +119,13 @@
   --toc-heading-font-color: var(--doc-font-color);
   --toc-border-color: var(--panel-border-color);
   --toc-line-height: 1.2;
+  /* feedback */
+  --feedback-button-background: var(--color-white);
+  --feedback-button-font-color: var(--color-brand-primary);
+  --feedback-button-font-color-selected: var(--color-brand-secondary);
+  --feedback-button-border-color: var(--color-white);
+  --feedback-button-border-color-selected: var(--color-brand-secondary);
+  --feedback-thank-you-font-color: var(--color-brand-primary);
   /* footer */
   --footer-line-height: var(--doc-line-height);
   --footer-background: var(--color-white);
