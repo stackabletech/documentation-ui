@@ -61,6 +61,6 @@
     "stylelint": "^13.13",
     "stylelint-config-standard": "^22",
     "vinyl-buffer": "^1.0",
-    "vinyl-fs": "^3.0"
+    "vinyl-fs": "^4.0.0"
   }
 }
